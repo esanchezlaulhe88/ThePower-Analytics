@@ -1,2 +1,2 @@
 # ThePower-Analytics
- Ejerecicios
+ Ejercicios
