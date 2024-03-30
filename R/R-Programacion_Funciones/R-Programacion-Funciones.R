@@ -35,13 +35,28 @@ tabla_multiplicar(5)
 #Ejercicio_4:Crea una función llamada numeros_pares que tome un parámetro numérico limite e imprima los números pares hasta ese límite.
 #Utiliza un bucle con condicionales y operaciones con vectores
 numeros_pares <- function(limite){
-  resultado<-0
-  i<-1
-  while(i <= length(limite)){
-    resultado<-resultado+i
-    print(resultado)
-  i<-i+1
+  pares <- c()
+  for (i in 1:limite) {
+    if (i %% 2 == 0) {
+      pares <- c(pares, i)
+    }
   }
-return(limite)
+  print(pares)
 }
-numeros_pares(6)
+numeros_pares(50)
+numeros_pares(16)
+#Ejercicio_5:Define una función llamada matriz_cuadrada que tome un parámetro numérico n e imprima una matriz cuadrada de tamaño n x n donde los
+#elementos son el resultado de la suma de sus índices de fila y columna
+#Utiliza Bucle Anidado con Condicionales y Operaciones de Listas
+matriz_cuadrada <- function(n) {
+  matriz <- matrix(0, nrow = n, ncol = n)
+  for (i in 1:n) {
+    for (j in 1:n) {
+      matriz[i, j] <- i + j
+    }
+  }
+  print(matriz)
+}
+matriz_cuadrada(4)
+matriz_cuadrada(2)
+matriz_cuadrada(10)
