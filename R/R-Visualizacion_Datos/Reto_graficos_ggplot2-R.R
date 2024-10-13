@@ -8,7 +8,7 @@ data(mpg)
 head(mpg)
 
 ggplot(mpg,aes(x=cyl)) +
-  geom_histogram( binwidth = 2, color="#8B5F65", fill = "#FFB6C1", linetype = 1, linewidth = 1.1)+
+  geom_histogram( binwidth = 2, color="#8B5F65", fill = "#FFB6C1", linetype = 1, linewidth = 1.1,alpha=0.7)+
   labs(title = "Histograma nº Coches por Clilindrada",
        x="Cilindros",
        y="N. de Coches")
